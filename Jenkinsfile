@@ -10,7 +10,7 @@ pipeline {
        sh 'docker build -t docker.io/tejaswinidockerhub/user .'
        }
      }
-    stage('stage 2') {
+    stage('Docker Push') {
       steps {
         sh 'docker push docker.io/tejaswinidockerhub/user'
       }
